@@ -1,0 +1,31 @@
+{
+  "name": "playflim",
+  "version": "1.0.0",
+  "description": "playflim website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmlteam/playflim.git"
+  },
+  "keywords": [
+    "pug",
+    "less"
+  ],
+  "author": "mml",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmlteam/playflim/issues"
+  },
+  "homepage": "https://github.com/mmlteam/playflim#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-cssmin": "^0.1.7"
+  }
+}

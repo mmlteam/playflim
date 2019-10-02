@@ -1,0 +1,76 @@
+@import "partials/const";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, navbar, header, footer{
+  margin: 0;
+}
+
+.padding-item{
+  padding:10px;
+}
+
+.fullwidth{
+  width:100%;
+}
+
+.chat-title, .chat-block, .chat-editor{
+  .fullwidth;
+}
+
+.chat-title {
+  background: @color_blue_1;
+  color: @color_white_1;
+  padding:10px 0;
+  .text{
+    .padding-item;
+  };
+}
+
+.chat-block{
+  .chat-item{
+    .padding-item;
+  };
+  .chat-item.me{
+    background: @color_me;
+  };
+  .chat-item.opponent{
+    background: @color_opponent;
+  };
+}
+
+.chat-editor{
+  position: absolute;
+  bottom: 0;
+  div {
+    .padding-item;
+  }
+  textarea{
+    .fullwidth
+  }
+}
+
+/* Common Components*/
+
+.page-header {
+  background: #000;
+  padding: 20px;
+  color: #fff;
+}
+
+.page-footer {
+  background: #ccc;
+  padding: 20px;
+  color: #333;
+}
+
+.page-content {
+  min-height: 90vh;
+}
+
+.navigation a {
+  color: #fff;
+}
