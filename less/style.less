@@ -1,6 +1,8 @@
 @import "partials/const";
 @import "partials/grid";
 @import "partials/banner";
+@import "partials/common";
+@import "partials/header";
 
 *{
   margin: 0;
@@ -57,10 +59,15 @@ html, body, navbar, header, footer{
 
 /* Common Components*/
 
+.page-wrapper{
+  padding: 25px 65px;
+}
+
 .page-header {
-  background: #000;
-  padding: 20px;
-  color: #fff;
+  padding: 25px 65px;
+  display:@flex;
+  flex-direction: row;
+  justify-content:space-between;
 }
 
 .page-footer {
@@ -74,6 +81,5 @@ html, body, navbar, header, footer{
 }
 
 .navigation a {
-  color: #fff;
-  margin: 10px;
+  margin: 15px;
 }
