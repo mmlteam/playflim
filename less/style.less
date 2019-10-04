@@ -2,7 +2,19 @@
 @import "partials/grid";
 @import "partials/banner";
 @import "partials/common";
+@import "partials/services";
+@import "partials/portfolio";
 @import "partials/header";
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../css/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../css/fonts/Quicksand-Regular.ttf");
+}
 
 *{
   margin: 0;
@@ -11,6 +23,10 @@
 }
 html, body, navbar, header, footer{
   margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-transform:@uppercase;
 }
 
 .padding-item{
@@ -58,11 +74,9 @@ html, body, navbar, header, footer{
 }
 
 /* Common Components*/
-
-.page-wrapper{
-  padding: 25px 65px;
+.section-wrapper{
+  margin-top:@margin-t-100;
 }
-
 .page-header {
   padding: 25px 65px;
   display:@flex;
