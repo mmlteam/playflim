@@ -1,3 +1,10 @@
+//project-color
+.yellow_font_color{
+	color: @yellow_font_color;
+	font-family:'Open Sans', sans-serif;
+	font-weight: 500;
+}
+
 //All-buttons
 .yellow-btn{
 	padding: 10px 5px;
@@ -30,23 +37,27 @@
 	letter-spacing:1px;
 	text-transform:@uppercase;
 }
-
-
-
 //Section-title
-.section-title{
+.service-content{
 	position:@relative;
 	text-align:@center;
 	margin:@margin-t-b-100;
 }
-.section-title img{
+.section-subtitle{
+	font-size:30px;
+	color:@color_black;
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+	margin-bottom: 25px;
+}
+.service-content img{
 	position:@absolute;
 	z-index:-1;
 	top:-17%;
 	left:46%;
 }
 
-.section-title h1{
+.section-title{
 	font-size:60px;
 	color:@color_black;
 	font-family:'Open Sans', sans-serif;
@@ -65,4 +76,12 @@
 
 .feature-box h4{
 	margin-top:@margin-t-5;
+}
+
+//Center-align
+.text-center{
+	text-align:@center;
+}
+.text-left{
+	text-align:@left;
 }
