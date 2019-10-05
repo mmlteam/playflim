@@ -1,1 +1,49 @@
-h1 contact us page
+extends layouts/default
+
+block content
+    include partials/header
+    .banner-section-contact
+        h1 
+            span CONTACT 
+            | US
+        img(src="")
+    .address-section-contact
+        .row
+            .col-md-4
+                .address-wrapper-contact
+                    h2 ADDRESS
+                    p 82 Bernie Greens Apt. 210, Hendon Way, London, UK
+            .col-md-4
+                .address-wrapper-contact
+                    h2 CONTACT
+                    p 
+                        span Phone No. - 
+                        | 029-282-7383  
+                    p 
+                        span Tel. - 
+                        | 002-288-3828
+            .col-md-4
+                .address-wrapper-contact
+                    h2 ADDRESS
+                    p info@mymail.com 
+                    p company@gmail.com
+    .form-section-contact
+        h1 
+            center  LETS TALK 
+                span GET IN TOUCH
+        img(src="")
+        .row
+            .col-md-6
+                img(src="")
+            .col-md-6
+                .row
+                    .col-md-6
+                        input(type="text" name="" placeholder="NAME")
+                        input(type="text" name="" placeholder="PHONE NO.")
+                    .col-md-6
+                        input(type="text" name="" placeholder="E-MAIL")
+                        input(type="text" name="" placeholder="SUBJECT")
+                input(type="text" name="" placeholder="MESSAGE")
+                <br/>
+                button SEND MESSAGE
+    include partials/footer
