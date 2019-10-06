@@ -3,10 +3,13 @@ const gulp = require('gulp'),
     pug = require('gulp-pug'),
     less = require('gulp-less')
 browserSync = require('browser-sync');
+const image = require('gulp-image');
+
 
 const SITE_DIR = '_site',
     LESS_DIR = 'less',
     CSS_DIR = '_site/css';
+    IMG_DIR = '_site/images'
 
 
 /**
@@ -31,6 +34,12 @@ gulp.task('less', function(){
         .pipe(browserSync.reload({stream: true}))
 })
 
+gulp.task('image', function () {
+    gulp.src('./images/*')
+      .pipe(image())
+      .pipe(gulp.dest(IMG_DIR))
+});
+
 gulp.task('browser-sync', ['less', 'pug'],function(){
     browserSync({
         server: {baseDir: SITE_DIR},
@@ -44,4 +53,4 @@ gulp.task('watch', function(){
     gulp.watch(['*pug', '**/*.pug'], ['pug'])
 })
 
-gulp.task('default', ['browser-sync', 'watch'])
+gulp.task('default', ['browser-sync', 'watch', 'image'])
