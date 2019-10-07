@@ -1,0 +1,73 @@
+extends layouts/default
+
+block content
+    link(rel="stylesheet" href="./css/contact-new.css")
+    include partials/header
+    - var bgImg = './images/banner-contact.png';
+    include layouts/template1
+        #contact
+            .banner-section
+                .container
+                    h1 
+                        | CONTACT 
+                        span US
+                    img(src="images/play-button.png")
+            <div class="clearfix">
+            .address-section-contact
+                center
+                    .row
+                        .container
+                            .col-4
+                                .address-wrapper-contact
+                                    h2 ADDRESS
+                                    p 82 Bernie Greens Apt. 210, Hendon Way, London, UK
+                            .col-4
+                                .address-wrapper-contact
+                                    h2 CONTACT
+                                    p 
+                                        span Phone No. - 
+                                        | 029-282-7383  
+                                    p 
+                                        span Tel. - 
+                                        | 002-288-3828
+                            .col-4
+                                .address-wrapper-contact
+                                    h2 E-MAIL
+                                    p info@mymail.com 
+                                    p company@gmail.com
+            <div class="clearfix">
+            .form-section-contact
+                .container
+                    .form-header
+                        h1 
+                            center  LETS TALK 
+                                <br/>
+                                span GET IN TOUCH
+                        img(src="images/play-md.png")
+                    .form-wrapper
+                        .row
+                            .col-6
+                                .map-wrapper 
+                                    img(src="images/map.png")
+                            .col-6
+                                .row
+                                    .col-6
+                                        .form-input
+                                            input(type="text" name="" placeholder="NAME")
+                                    .col-6
+                                        .form-input
+                                            input(type="text" name="" placeholder="E-MAIL")
+                                .row
+                                    .col-6
+                                        .form-input2
+                                            input(type="text" name="" placeholder="PHONE NO.")
+                                    .col-6
+                                        .form-input2
+                                            input(type="text" name="" placeholder="SUBJECT")
+                                .form-input3
+                                    input(type="text" name="" placeholder="MESSAGE")
+                                <br/>
+                                .yellow-btn
+                                    a(href="#") SEND MESSAGE
+        <div class="clearfix">
+    include partials/footer

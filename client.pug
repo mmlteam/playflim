@@ -1,12 +1,59 @@
 
 extends layouts/default
 block content
-
-  include partials/header
-  - var bgImg = './images/bg-img.jpg';
-  include layouts/template1
-    div.container 
-        div.row
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	link(rel="stylesheet", href="./css/client.css")
+	include partials/header
+	- var bgImg = './images/banner-contact.png';
+	include layouts/template1
+		#client
+			.banner-section
+				.container
+					h1 	CLIENTS
+					img(src="images/play-button.png")
+			.clearfix
+			.client-para 
+				.container
+					p Purple flicks only specialize in videos creation. That is all we do, all we have been doing for 10 years, we are industry <br> leaders in film & video production,working with the world’s most famous brands. In a world where, time is <br> precious and content is king, we offer creative, original and impressive video services<br> that will help you to take off.
+			.client-img
+				.row
+					.container
+						.row
+							.col-2
+								.client-img-wrap1
+									img(src="images/c1.png" alt="")
+							.col-2
+								.client-img-wrap2
+									img(src="images/c2.png" alt="")
+							.col-2
+								.client-img-wrap3
+									img(src="images/c3.png" alt="")
+							.col-2
+								.client-img-wrap4
+									img(src="images/c4.png" alt="")
+							.col-2
+								.client-img-wrap5
+									img(src="images/c5.png" alt="")
+							.col-2
+								.client-img-wrap6
+									img(src="images/c6.png" alt="")
+						.row
+							.col-2
+								.client-img-wrap4
+									img(src="images/c4.png" alt="")
+							.col-2
+								.client-img-wrap6
+									img(src="images/c6.png" alt="")
+							.col-2
+								.client-img-wrap5
+									img(src="images/c5.png" alt="")
+							.col-2
+								.client-img-wrap1
+									img(src="images/c1.png" alt="")
+							.col-2
+								.client-img-wrap2
+									img(src="images/c2.png" alt="")
+							.col-2
+								.client-img-wrap3
+									img(src="images/c3.png" alt="")
             
-  include partials/footer
+	include partials/footer
