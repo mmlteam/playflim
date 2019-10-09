@@ -2,15 +2,26 @@
 	background:url("../images/banner.png")no-repeat center;
 	height:550px;
 	background-size:cover;
+	position: relative;
+    top: 0;
+    z-index: -1;
 }
 .banner-title{
 	text-transform:@uppercase;
 	font-size:29px;
-	margin-top:@margin-t-120;
+	margin-top: 0!important;
+	padding-top: 150px;
+}
+.banner-title h1{
+	font-weight: 600;
+}
+.banner-subtitle{
+	font-weight: 600;
+	font-size:60px!important;
 }
 .banner-title p{
-	font-size:18px;
-	line-height:30px;
+	font-size:16px!important;
+	line-height:34px;
 	margin-top:@margin-t-25;
 	text-transform:lowercase;
 }
@@ -21,5 +32,6 @@
 		background-repeat: no-repeat;
 		height: 200px;
 		background-position: center center;
+		margin-top: 100px;
 	}
 }
