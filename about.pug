@@ -1,7 +1,35 @@
 extends layouts/default
-
 block content
-  include partials/header
-  
-    div about page
-  include partials/footer
+    link(rel="stylesheet", href="./css/about.css")
+    include partials/header
+    - var bgImg = './images/banner-contact.png';
+    include layouts/template1
+        #about
+            .banner-section
+                .container
+                    h1 ABOUT
+                        span US
+                    img(src="images/play-button.png")
+            .clearfix
+            .about-header 
+                .container
+                    .row
+                        .col-6
+                            .about-wrapper
+                                h1 WHO WE ARE <br>
+                                    span ABOUT PLAYFILM 
+                                p A Playfilms is a creative film production house, which has been in business for nearly more than half a decade now. During this period, it has earned the reputation of being one of the most dependable sources of high-quality production of television commercials and corporate films. With complete in-house technical & creative skills we provide a turnkey creative solution to all kind of communication needs across all media platform thus crafting a creative pool that bridles with talent and imagination. <br><br>At play , we have a panel of talented and experienced Directors, skilled writers, a core production and post production team capable of handling complex tasks in film production from the story on the papers to the final film on the tape.
+                        .col-6
+                            img(src="./images/about.jpg", alt="")
+            .about-team
+                .container
+                    .row
+                        .team-wrapper
+                            .col-4
+                                img(src="./images/team1.png", alt="")
+                            .col-8
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. A Playfilms is a creative film production house, which has been in business for nearly more than half a decade now. During this period, it has earned the reputation of being one of the most dependable sources of high-quality production of television commercials and corporate films. With complete in-house technical & creative skills we provide a turnkey creative solution to all kind of communication needs across all media platform thus crafting a creative pool that bridles with talent and imagination.
+                                .yellow-btn
+                                    a(href="#") Get In Touch
+
+    include partials/footer

@@ -1,0 +1,150 @@
+extends layouts/default
+
+block content
+    link(rel="stylesheet" href="./css/service.css")
+    include partials/header
+    - var bgImg = './images/banner-service.png';
+    include layouts/template1
+        #service
+            .banner-section
+                .container
+                    h1 SERVICES
+                    img(src="images/play-button.png")
+            .clearfix
+            .service-para
+                .container 
+                    p Purple flicks only specialize in videos creation. That is all we do, all we have been doing for 10 years, we are industry leaders in film & video production, <br> working with the world’s most famous brands. In a world where, time is precious and content is king, we offer creative, <br> original and impressive video services that will help you to take off
+            .service-section
+                .container
+                    .services
+                        .row
+                            .col-4
+                                img(src="./images/corporate.png", alt="")
+                            .col-8
+                                h1 Corporate Films & More
+                                p A Corporate Film is the most effective medium to reach out the nook and corner of the business world, convey the correct and clear visual messages about your products & services. They are an effective B2B marketing tool as they showcase the company profile, services and offerings to clients and customers, It easily gets your point across in an informative, active, and interesting way, The message in such films needs to be crisp, backed by data, to the point and engaging. It is all about doing the tight rope walk. Our corporate videos are polished, message-bound and targeted at the core audience. At Purple Flicks, we understand that corporate films need to have a soul in the form of emotional appeal, powerful audio and visual elements and a professional feel. A well-done orporate video can really turn things around for your company.
+                                .col-4
+                                    ul
+                                        li Digital Films
+                                        li Industrial films
+                                        li Presentation films
+                                        li Presenter videos
+                                .col-4
+                                    ul
+                                        li Journey videos
+                                        li Felicitation Film
+                                        li Trade Show Film
+                                        li Augmented Realty Videos
+                                .col-4
+                                    ul
+                                        li Short films
+                                        li Still photography
+                                        li Celebration film
+                                        li Corporate presentation
+                    .clearfix
+                    .services
+                        .row
+                            .col-8
+                                h1 AD-FILMS & MORE
+                                p The essence of ad films lies in presenting day-to-day activities featuring relatable characters and a strong emotional connect. Sounds simple! However, the challenge lies in doing all of this within a few seconds while selling your brand across to the target audience. At Purple Flicks, we have a unique blend of proven creative, managerial and entrepreneurial talent that works in our favour in getting all these elements right. We are involved right from brain-storming, conceptualizing a product to designing the characters, music and special effects. Creativity, aesthetics and high production standards comes through each of our endeavours. Our focus is on A.I.D.A. (Attention, Interest, Desire, Action). Our acumen for story-telling comes in good stead for engaging the audience and thereby leading to enhanced sales by promoting Call-to-Action by the target audience.
+                                .col-4
+                                    ul
+                                        li Viral Videos
+                                        li What’sApp Ad’s
+                                        li App based Ad’s
+                                        li Social media
+                                .col-4
+                                    ul
+                                        li OTT & new media
+                                        li Theater
+                                        li Radio
+                                        li Mobile
+                                .col-4
+                                    ul
+                                        li Web and Internet
+                                        li Digital
+                                        li TV
+                            .col-4
+                                img(src="./images/ad.png", alt="")
+                    .clearfix
+                    .services
+                        .row
+                            .col-4
+                                img(src="./images/media.png", alt="")
+                            .col-8
+                                h1 OTT and new media
+                                p We design, think, research and build vidoeos for web and new media. Our team has a deep understanding of the industry dynamics, and we help to transform your content into successful digital businesses. Our bespoke development of your content ensures higher business value. OTT and new media is marked by high-value content at low cost, original content and compatibility with multiple devices; making it an indispensable marketing feature. With a well-defined OTT and web campaign, you can gain an edge over your competitors.
+                                .col-4
+                                    ul
+                                        li Digital Films
+                                        li Industrial films
+                                        li Presentation films
+                                        li Presenter videos
+                                .col-4
+                                    ul
+                                        li Journey videos
+                                        li Felicitation Film
+                                        li Trade Show Film
+                                        li Augmented Realty Videos
+                                .col-4
+                                    ul
+                                        li Short films
+                                        li Still photography
+                                        li Celebration film
+                                        li Corporate presentation
+                    .clearfix
+                    .services
+                        .row
+                            .col-8
+                                h1 BROADCAST FILMS & MORE
+                                p Broadcast media is a convenient way to transmit information as well as provide entertainment to a large audience. We streamline the process for you by developing customizedcontent. Our team has hands-on experience when it comes to brodacast media. We tailor the message as per the target audience and get the desired results for you. The advent of newer technology hasn’t made the traditional media options obsolete. Broadcast media still holds a major influence on customer behaviour and a crucial way of reaching out. We are involved in producing different genre of television programming for various television networks worldwide. We have highly skilled production and programming teams and state of the art production infrastructure to produce feature films and television programs of high entertainment value.
+                                .col-4
+                                    ul
+                                        li Music Videos
+                                        li Shopping Programme Content
+                                        li Television
+                                        li Show Packaging
+                                .col-4
+                                    ul
+                                        li Promos
+                                        li Ad films
+                                        li Brand Films
+                                        li Feature Films
+                                .col-4
+                            .col-4
+                                img(src="./images/ad.png", alt="")
+        .clearfix
+        .cta
+            .container
+                h1 Are you ready to start your business?
+                    span.cta-but contact to GET A QUOTE
+        .clearfix
+        .client-img
+            .container
+                .service-client-header
+                    h1 
+                        center  OUR 
+                            span CLIENTS
+                    img(src="images/service-play-md.png")
+                .service-client-wrapper
+                    .row
+                        .col-2
+                            .client-img-wrap1
+                                img(src="images/c1.png" alt="")
+                        .col-2
+                            .client-img-wrap2
+                                img(src="images/c2.png" alt="")
+                        .col-2
+                            .client-img-wrap3
+                                img(src="images/c3.png" alt="")
+                        .col-2
+                            .client-img-wrap4
+                                img(src="images/c4.png" alt="")
+                        .col-2
+                            .client-img-wrap5
+                                img(src="images/c5.png" alt="")
+                        .col-2
+                            .client-img-wrap6
+                                img(src="images/c6.png" alt="")
+
+    include partials/footer

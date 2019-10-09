@@ -7,6 +7,9 @@
 @import "partials/header";
 @import "partials/portfolio";
 @import "partials/footer";
+@import "partials/about";
+@import "partials/clients";
+@import "partials/contact";
 
 *{
   margin: 0;
@@ -19,6 +22,9 @@ html, body, navbar, header, footer{
 
 h1,h2,h3,h4,h5,h6{
   text-transform:@uppercase;
+}
+ul li{
+  list-style: none;
 }
 
 .padding-item{
@@ -67,7 +73,10 @@ h1,h2,h3,h4,h5,h6{
 
 /* Common Components*/
 .section-wrapper{
-  margin:@margin-t-b-100;
+  margin-top:@margin-t-100;
+}
+.section-t-50-wrapper{
+  margin-top:@margin-t-50;
 }
 .page-header {
   padding: 25px 65px;
