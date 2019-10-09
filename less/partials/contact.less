@@ -1,8 +1,8 @@
-#contact-wrapper{
+section#contact-wrapper{
 	padding:@padd-t-b-100;
-	background: url("./images/contact-bg.jpg")no-repeat;
-	background-position:35px 50px;
-	height: 700px;
+	background: url("../images/contact-bg.jpg")no-repeat;
+	background-position:cover;
+	height: 650px;
 	background-size: cover;
 }
 .contact-content{
@@ -11,7 +11,40 @@
 }
 .contact-content img{
 	position:@absolute;
-	top:-12%;
+	top:-22%;
 	left:42%;
-	z-index: -1;
+}
+.contact-detail-content img{
+	width: 30px;
+	height: 30px;
+}
+.contact-detail-content{
+	display: flex;
+	margin-bottom: @margin-b-15;
+}
+.contact-detail-content p{
+	padding-left: 15px;
+}
+.form-input input {
+    line-height: 35px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+    outline: none;
+    width: 100%;
+    background:transparent;
+}
+.form-input textarea {
+    line-height: 35px;
+    font-family:'Open Sans', sans-serif;
+    margin: 10px 0;
+    color:#333;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+    outline: none;
+    width: 100%;
+    background:transparent;
+}
+.send-btn{
+	margin-top: @margin-t-15;
 }

@@ -5,16 +5,24 @@ section#contact-wrapper
 				img(src="images/play-md.png" alt="play-img-white")
 				h1.section-title <strong>Contact</strong> Us
 		.row
-			.col-4
+			.col-6
 				h1.section-subtitle Get In Touch
-				.col-2
-					img(src="images/location.png" alt="location")
-					img(src="images/call.png" alt="location")
-					img(src="images/email.png" alt="location")	
-				.col-10
-					p vero eos et accusamus et iusto odio ducimus qui blanditiis praesentium
-					p 090-898-9099 / 894-490-4849
-					p info@mymail.com / company@gmail.com
-					.yellow-btn
+				ul
+					li.contact-detail-content
+						img(src="images/location.png" alt="location")
+						p vero eos et accusamus et iusto odio <br>ducimus qui blanditiis praesentium
+					li.contact-detail-content
+						img(src="images/call.png" alt="location")
+						p 090-898-9099 / 894-490-4849
+					li.contact-detail-content
+						img(src="images/email.png" alt="location")
+						p info@mymail.com / company@gmail.com
+				.yellow-btn
 					a(href='#') Read More
-			.col-8
+			.col-6
+				.form-input
+					input(type="text" name="name" placeholder="Name")
+					input(type="text" name="email" placeholder="E-mail")
+					textarea(rows="2" cols="50") Message
+					.yellow-btn.send-btn
+						a(href='#') Send
