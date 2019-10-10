@@ -1,0 +1,1 @@
+console.log('Hello, this is test js file u need to check developer console this file will be auto detect by gulp and locate to _site/js folder minified version also maintained by gulp, cool isnt it!')
