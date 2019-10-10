@@ -1,0 +1,15 @@
+extends layouts/default
+block content
+    link(rel="stylesheet", href="./css/client.css")
+    script(src="js/test.js")
+    include partials/header
+    - var bgImg = './images/banner-contact.png';
+    include layouts/template1
+        #client(onload="message()")
+            .banner-section
+                .container
+                    h1 	CLIENTS
+                    img(src="images/play-button.png")
+        .clearfix
+        button(onload="message()") Try it
+    include partials/footer

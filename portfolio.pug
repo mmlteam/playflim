@@ -1,6 +1,12 @@
 extends layouts/default
 block content
+    script(src="js/jquery.min.js")
+    script(src="js/lightbox-plus-jquery.min.js")
+    script(src="js/script.js")
+    script(src="js/isotope.pkgd.min.js")
+    script(src="js/lightbox.js")
     link(rel="stylesheet", href="./css/portfolio.css")
+    link(rel="stylesheet", href="./css/lightbox.css")
     include partials/header
     - var bgImg = './images/banner-contact.png';
     include layouts/template1
@@ -12,36 +18,47 @@ block content
             .clearfix
             .portfolio-para
                 p Purple flicks only specialize in videos creation. That is all we do, all we have been doing for 10 years, we are industry leaders in film & video production,<br> working with the world’s most famous brands. In a world where, time is precious and content is king, we offer creative,<br> original and impressive video services that will help you to take off.
-            .tab
-                button.tablinks(onclick="openCity(event, 'show-all')") SHOW ALL
-                button.tablinks(onclick="openCity(event, 'camera-acting')") CAMERA ACTING
-                button.tablinks(onclick="openCity(event, 'cinemagraphy')") CINEMAGRAPHY
-                button.tablinks(onclick="openCity(event, 'voice-dubbing')") VOICE & DUBBING
-            //- #show-all.tabcontent
-            .portfolio-img
+            .filters.filter-button-group
+                ul
+                    h4
+                        li.active(data-filter="*") SHOW ALL
+                        li(data-filter=".camera") CAMERA ACTING
+                        li(data-filter=".cinema") CINEMAGRAPHY
+                        li(data-filter=".voice") VOICE & DUBBING
                 .container
-                    #camera-acting.tabcontent
-                        .tab-wrapper-img
-                            img(src="./images/p1.jpg", alt="")
-                        .tab-wrapper-img
-                            img(src="./images/p2.jpg", alt="")
-                        .tab-wrapper-img
-                            img(src="./images/p3.jpg", alt="")
-                    #cinemagraphy.tabcontent
-                        .tab-wrapper-img
-                            img(src="./images/p4.jpg", alt="")
-                        .tab-wrapper-img
-                            img(src="./images/p5.jpg", alt="")
-                        .tab-wrapper-img
-                            img(src="./images/p6.jpg", alt="")
-                    #voice-dubbing.tabcontent
-                        .tab-wrapper-img
-                            img(src="./images/p7.jpg", alt="")
-                        .tab-wrapper-img
-                            img(src="./images/p8.jpg", alt="")
-                        .tab-wrapper-img
-                            img(src="./images/p9.jpg", alt="")
-            .clearfix
+                    .content.grid
+                        .single-content.camera.grid-item
+                            a.example-image-link(href="./images/p1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.")
+                                img.example-image(src="./images/p1.jpg" alt="")
+                        .single-content.cinema.grid-item
+                            a.example-image-link(href="./images/p2.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.")
+                                img.example-image(src="./images/p2.jpg" alt="")
+                        .single-content.voice.grid-item
+                            a.example-image-link(href="./images/p3.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.")
+                                img.example-image(src="./images/p3.jpg" alt="")
+                        .single-content.cinema.grid-item
+                            a.example-image-link(href="./images/p4.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.")
+                                img.example-image(src="./images/p4.jpg" alt="")
+                        .single-content.voice.grid-item
+                            a.example-image-link(href="./images/p5.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.")
+                                img.example-image(src="./images/p5.jpg" alt="")
+                        .single-content.camera.grid-item
+                            a.example-image-link(href="./images/p6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.")
+                                img.example-image(src="./images/p6.jpg" alt="")
+                        .single-content.cinema.grid-item
+                            a.example-image-link(href="./images/p7.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.")
+                                img.example-image(src="./images/p7.jpg" alt="")
+                        .single-content.camera.grid-item
+                            a.example-image-link(href="./images/p8.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.")
+                                img.example-image(src="./images/p8.jpg" alt="")
+                        .single-content.voice.grid-item
+                            a.example-image-link(href="./images/p9.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.")
+                                img.example-image(src="./images/p9.jpg" alt="")
+
+                
+                
+                
+                
             .cta
                 .container
                     h1 Are you ready to start your business?
