@@ -1,6 +1,7 @@
 .idea
 node_modules
 npm-debug.*
+_site/
 _site/*.html
 _site/css/*
 package-lock.json
