@@ -36,10 +36,35 @@
     margin: 75px auto 0px auto;
 }
 .portfolio-img-btm-box{
-    background: red;
+    background: #fed501;
     padding: 15px 15px;
     margin-top: -5px;
 }
+.portfolio-box-traingle img{
+    width: 57px!important;
+    height: auto;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    opacity: 0;
+}
+.img-overlay{
+    width: 340px;
+    height: 236px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.tab-wrapper-img:hover .img-overlay{
+    opacity: 1;
+}
+.tab-wrapper-img:hover img{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
 .tab{
     text-align: center;
     button{
@@ -58,6 +83,7 @@
     display: flex;
     .tab-wrapper-img {
         padding: 0 30px 25px 0;
+        position:relative;
         img{
             width: 100%;
         }
