@@ -6,10 +6,9 @@ block content
     - var bgImg = './images/banner-service.png';
     include layouts/template1
         #service
-            .banner-section
-                .container
-                    h1 SERVICES
-                    img(src="images/play-button.png")
+            .header-banner-text
+                h1 SERVICES
+                img(src="images/play-button.png")
             .clearfix
             .service-para
                 .container 
@@ -115,9 +114,9 @@ block content
                                 img(src="./images/ad.png", alt="")
         .clearfix
         .cta
-            .container
-                h1 Are you ready to start your business?
-                    span.cta-but contact to GET A QUOTE
+            h1 Are you ready to start your business?
+            div.black-btn
+                a(href='#') CONTACT TO GET A QUOTE
         .clearfix
         .client-img
             .container
@@ -125,26 +124,26 @@ block content
                     h1 
                         center  OUR 
                             span CLIENTS
-                    img(src="images/service-play-md.png")
+                    img(src="images/play-md.png")
                 .service-client-wrapper
                     .row
                         .col-2
-                            .client-img-wrap1
+                            .client-img-wrap1.client-img-wrap
                                 img(src="images/c1.png" alt="")
                         .col-2
-                            .client-img-wrap2
+                            .client-img-wrap2.client-img-wrap
                                 img(src="images/c2.png" alt="")
                         .col-2
-                            .client-img-wrap3
+                            .client-img-wrap3.client-img-wrap
                                 img(src="images/c3.png" alt="")
                         .col-2
-                            .client-img-wrap4
+                            .client-img-wrap4.client-img-wrap
                                 img(src="images/c4.png" alt="")
                         .col-2
-                            .client-img-wrap5
+                            .client-img-wrap5.client-img-wrap
                                 img(src="images/c5.png" alt="")
                         .col-2
-                            .client-img-wrap6
+                            .client-img-wrap6.client-img-wrap
                                 img(src="images/c6.png" alt="")
 
     include partials/footer

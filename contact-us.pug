@@ -6,12 +6,9 @@ block content
     - var bgImg = './images/banner-contact.png';
     include layouts/template1
         #contact
-            .banner-section
-                .container
-                    h1 
-                        | CONTACT 
-                        span US
-                    img(src="images/play-button.png")
+            .header-banner-text
+                h1 Contact Us
+                img(src="images/play-button.png")
             <div class="clearfix">
             .address-section-contact
                 center
@@ -20,21 +17,27 @@ block content
                             .col-4
                                 .address-wrapper-contact
                                     h2 ADDRESS
-                                    p 82 Bernie Greens Apt. 210, Hendon Way, London, UK
+                                    p
+                                        img(src="images/location.png" alt="location" width="25" height="25")
+                                        span 82 Bernie Greens Apt. 210, Hendon Way, London, UK
                             .col-4
                                 .address-wrapper-contact
                                     h2 CONTACT
                                     p 
-                                        span Phone No. - 
-                                        | 029-282-7383  
-                                    p 
-                                        span Tel. - 
-                                        | 002-288-3828
+                                        img(src="images/call.png" alt="call" width="25" height="25")
+                                        span.pad-left 029-282-7383
+                                    p
+                                        img(src="images/skype.png" alt="skype" width="20" height="20")
+                                        span.pad-left 029-282-7383
+                                    p
+                                        img(src="images/whatsapp.png" alt="whatsapp" width="22" height="22")
+                                        span.pad-left 029-282-7383
                             .col-4
                                 .address-wrapper-contact
                                     h2 E-MAIL
-                                    p info@mymail.com 
-                                    p company@gmail.com
+                                    p
+                                        img(src="images/email.png" alt="email" width="25" height="25")   
+                                        span info@mymail.com <br> company@gmail.com
             <div class="clearfix">
             .form-section-contact
                 .container
