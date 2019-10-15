@@ -124,9 +124,9 @@
 	#service .services h1{
 		margin:25px 0!important;
 		font-weight: 500;
-    	font-size: 22px;
+		font-size: 22px;
 	}
-	#service .service-client-header h1{
+	.service-client-header h1{
 		font-size: 45px;
 	}
 	.internal-page-wrapper .bg-img-wrapper{
@@ -134,37 +134,38 @@
 	}
 	.header-banner-text h1{
 		top: 32%;
-    	left: 32%;
-    	font-size: 26px;
+		left: 32%;
+		font-size: 26px;
 	}
 	.header-banner-text img{
 		top: 46%;
-    	left: 40%;
+		left: 40%;
 	}
 	.cta{
 		display: flex;
-    	flex-wrap: wrap;
-    	align-items: center;
-    	justify-content: center;
-	.black-btn{
-		margin-top: -50px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		.black-btn{
+			margin-top: -50px;
+		}
+		h1{
+			padding: 0 0px;
+			font-size: 22px!important;
+			line-height: 32px;
+		}
 	}
-	h1{
-		padding: 0 0px;
-		font-size: 22px!important;
-		line-height: 32px;
-	}
-}
 	.service-client-wrapper .client-img-wrap{
 		text-align: center;
 		margin-bottom:@margin-b-25;
 	}
 	//------------------About Us start--------------//
 	.about-header .about-wrapper h1{
-		font-size: 35px;
+		font-size: 35px!important;
 	}
 	.about-header .about-wrapper p{
 		font-size: 15px;
+		margin-bottom: @margin-b-25;
 	}
 	.team-wrapper h1{
 		font-size: 22px;
@@ -177,5 +178,119 @@
 	}
 	#client .client-img-wrap{
 		text-align: center;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
+	.client-para p{
+		text-align: justify;
+		font-size: 14px!important;
+	}
+
+	//----------------Contact Us Page-------------//
+	.address-wrapper-contact{
+		margin-bottom: @margin-b-25;
+	}
+
+	//navbar Responsive
+	a.menu-link {
+		display: none;
+	}
+	.js .navigation{
+		max-height: none;
+	}
+	.navigation ul {
+		margin: 0 0 0 -0.25em;
+		border: 0;
+	}
+
+	.navigation li {
+		display: inline-block;
+		margin: 0 0.25em;
+	}
+	.navigation li a {
+		border: 0;
+	}
+}
+
+// ipad-portrait media query
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	
+	// common css
+	#about-wrapper{
+		padding:75px 0;
+		height: auto;
+	}
+	.section-wrapper{
+		margin-top: @margin-t-75;
+	}
+	.section-title{
+		font-size:45px;
+	}
+	.yellow_title{
+		font-size:45px;
+	}
+
+	// Homepage 
+	.traingle-xs img{
+		left: 21%;
+		top: 23%;
+	}
+	.banner-subtitle{
+		font-size: 50px!important;
+	}
+	.banner-title h1{
+		font-size: 50px;
+		line-height: 60px;
+	}
+	.banner-play{
+		position: absolute;
+		right: 3%;
+		bottom: 0;
+	}
+	.ipad-responsive{
+		opacity: 1;
+	}
+	.desktop-device{
+		display: none;
+	}
+	.feature-box-cover{
+		text-align: center;
+	}
+	.feature-box-cover .btn-push{
+		margin: 0 auto 35px auto;
+	}
+	#portfolio-wrapper{
+		padding:75px 0;
+	}
+	.portfolio-img-content{
+		padding: 50% 25%;
+	}
+	.about-left-content .section-title{
+		text-align: center;
+	}
+	.about-left-content-desc{
+		margin-top: @margin-t-50;
+		padding:0px;
+	}
+	.about-left-content-desc .yellow-btn{
+		margin-bottom: @margin-b-35;
+	}
+	section#contact-wrapper{
+		height: auto;
+	}
+	#contact-wrapper .yellow-btn{
+		margin-bottom: @margin-b-25;
+	}
+	.footer-wrapper{
+		height: auto;
+	}
+	.footer-services,.footer-social-icons{
+		margin-top: @margin-t-15;
+	}
+
+}
+
+//ipad-pro media query
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+
 }
